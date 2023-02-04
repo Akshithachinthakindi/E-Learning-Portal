@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link href='https://fonts.googleapis.com/css?family=Hind:300,500,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        section {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+  
+        /* TAKE OBJECT FAR FROM PERSPECTIVE VIEW */
+        .card {
+          /* background-color: #0000aa; */
+          perspective: 1000px;
+          margin: 1rem;
+        }
+  
+        /* SET SAME COLUMN AND ROW FOR BOTH CARD */
+        .card-container {
+          display: grid;
+          grid-template-columns: 1fr;
+  
+          
+          transition: all 1s ease;
+  
+          transform-style: preserve-3d;
+        }
+        .card-front {
+          grid-area: 1 / 1;
+          transform: rotateY(180deg);
+        }
+        .card-back {
+          grid-area: 1 / 1;
+        }
+  
+        /* FIX CARD IMAGES WIDTH */
+        .card-container img {
+          width: 15rem;
+        }
+  
+        .card:hover .card-container {
+          transform: rotateY(180deg);
+        }
+      </style>
+</head>
+<body>
+    <div class="header">
+        <h2>E-Learning</h2>
+        <div id="navbar">
+        <div class="items">
+            <a class="active" href="home.html">Home</a>
+            <a href="courses.html">Courses</a>
+            <a href="teachers.html">Teachers</a>
+            <a href="contact.html">Conatct Us</a>
+            <a href="Login.html">Login</a>
+        </div>
+        </div>
+     
+     
+    <section>
+        <!-- CARD - 1 -->
+        <div class="card">
+          <div class="card-container">
+            <div class="card-front">
+              <img src="p1.jfif" />
+            </div>
+            <div class="card-back">
+              <img src="u3.png" />
+            </div>
+          </div>
+        </div>
+  
+        <!-- CARD - 2 -->
+        <div class="card">
+          <div class="card-container">
+            <div class="card-front">
+              <img src="p2.jfif" />
+            </div>
+            <div class="card-back">
+              <img src="u1.png" />
+            </div>
+          </div>
+        </div>
+        <!-- CARD - 3 -->
+        <div class="card">
+          <div class="card-container">
+            <div class="card-front">
+              <img src="p3.jfif" />
+            </div>
+            <div class="card-back">
+              <img src="u6.png" />
+            </div>
+          </div>
+        </div>
+        <!-- CARD - 4 -->
+        <div class="card">
+          <div class="card-container">
+            <div class="card-front">
+              <img src="p4.jfif" />
+            </div>
+            <div class="card-back">
+              <img src="u7.png" />
+            </div>
+          </div>
+        </div>
+        <!-- CARD - 5 -->
+        <div class="card">
+          <div class="card-container">
+            <div class="card-front">
+              <img src="p5.jfif" />
+            </div>
+            <div class="card-back">
+              <img src="u4.png" />
+            </div>
+          </div>
+        </div>
+        <!-- CARD - 6 -->
+        <div class="card">
+          <div class="card-container">
+            <div class="card-front">
+              <img src="p6.jfif" />
+            </div>
+            <div class="card-back">
+              <img src="u8.png" />
+            </div>
+          </div>
+        </div>
+        <!-- CARD - 7 -->
+        <div class="card">
+          <div class="card-container">
+            <div class="card-front">
+              <img src="p7.jfif" />
+            </div>
+            <div class="card-back">
+              <img src="u5.png" />
+            </div>
+          </div>
+        </div>
+        <!-- CARD - 8 -->
+        <div class="card">
+          <div class="card-container">
+            <div class="card-front">
+              <img src="p8.jfif" />
+            </div>
+            <div class="card-back">
+              <img src="u2.png" />
+            </div>
+          </div>
+        </div>
+      </section>
+           
+        
+    <script src="script.js"></script>
+</body>
+</html>
